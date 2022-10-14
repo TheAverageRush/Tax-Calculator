@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <img src="Icon.PNG" />
+      <ul class="ul">
+        <select class="select">
+          <option>Calculator</option>
+          <option>Salary</option>
+          <option>Business</option>
+          <option>Property</option>
+          <option>Capital Gains</option>
+          <option>Other Sources</option>
+        </select>
+        <select class="select">
+          <option>Tax Slabs</option>
+          <option>Salary</option>
+          <option>Business</option>
+          <option>Property</option>
+          <option>Capital Gains</option>
+          <option>Other Sources</option>
+        </select class="select">
+        <a href="#ContactUs">Contact</a>
+        <a href="#AboutUs">About Us</a>
+      </ul>
+       <div class="hamburger" style="display: none;">
+        🍔
+      </div>
+    </nav>
+    <section class="section-main">
+      <div class="header">
+        <h1>TAX CALCULATOR PAKISTAN 2022-2023</h1>
+        <p>This is the latest calculator as per 2022-2023 budget represented by Government of Pakistan</p>
+      </div>
+      <div class="second-section">
+        <div class="row-1">
+          <input id="salary" class="input" type="number" placeholder="Enter Amount" />
+          <select id="duration" class="input1">
+            <option>Duration</option>
+            <option>Monthly</option>
+            <option>Anually</option>
+          </select>
+          <button id="calculate-button" class="input button">Calculate</button>
+        </div>
+        <div class="row-2">
+          <div>
+            <p style="text-align: center; color: white; background-color: black; padding: 10px;">Deductible Allowances</p>
+          </div>
+          <div>
+            <button class="input button-1">Zakat</button>
+            <input id="zakat" class="input" min="0" value="0" type="number" placeholder="Enter Amount" />
+          </div>
+          <div>
+            <button class="input button-1">Education</button>
+            <input id="education" class="input" min="0" value="0" type="number" placeholder="Enter Amount" />
+          </div>
+          <div>
+            <button class="input button-1">Profit on Debt</button>
+            <input id="profit-on-debt" class="input" min="0" value="0" type="number" placeholder="Enter Amount" />
+          </div>
+        </div>
+        <div class="row-1">
+          <button id="tax-liability" style="margin-top: 30px; padding: 20px; height: auto;" class="input button-1">Your tax liability is: </button>
+        </div>
+      </div>
+    </section>
+    <section class="law">
+      <div class="row">
+        <img width="100px" height="100px" src="bx_book-reader.jpg" />
+        <h1>Basic Concepts of Income Tax</h1>
+        <p> You can find the fundamentals of income tax including taxable and none taxable sources. This brochure is to assist taxpayers from Goverment Of Pakistan.</p>
+      </div>
+      <div class="row">
+        <img width="100px" height="100px" src="Vector.png" />
+        <h1>Budget Document (PDF)</h1>
+        <p> You can find Federal Budget in Brief 2022-23. The fiscal year 2022-23 along with budget estimates and revised estimates for the fiscal year 2022-23from Goverment Of Pakistan</p>
+
+      </div>
+    </section>
+    <!-- <div class="imageswap">
+      <ul>
+        <li><img src="bx_book-reader.jpg" /></li>
+        <li><img src="Vector.png" /></li>
+      </ul>
+    </div> -->
+
+    <p class="ptitle" >Salary Tax Slabs According to Budget 2022-23</p>
+
+    <button type="button" class="collapsible">Salary income is under PKR 600,000 </button>
+<div class="content">
+  <p>If the annual salary income does not exceed PKR. 600,000 then the rate of the income tax is 0%.</p>
+</div>
+<button type="button" class="collapsible">Salary income exceeds PKR 600,000 but is under PKR 1.2 Million</button>
+<div class="content">
+  <p>If the annual salary income exceeds PKR. 600,000 but does not exceed PKR. 1.2 million then the rate of income tax is 2.5% of the amount exceeding PKR. 600,000.</p>
+</div>
+<button type="button" class="collapsible">Salary income exceeds PKR 1.2 Million but is under PKR 2.4 Million</button>
+<div class="content">
+  <p>If the taxable annual income exceeds PKR. 1.2 million but does not exceed PKR. 2.4 million then the rate of income tax is PKR. 15,000 + 12.5% of the amount exceeding PKR. 1.2 million.</p>
+</div>
+<button type="button" class="collapsible">Salary income exceeds PKR 2.4 Million but is under PKR 3.6 Million </button>
+<div class="content">
+  <p>If the annual salary income exceeds PKR. 2.4 million but does not exceed PKR. 3.6 million then the rate of income tax is flat PKR 165,000 + 20% of the amount exceeding PKR. 2.4 million</p>
+</div>
+<button type="button" class="collapsible">Salary income exceeds PKR 3.6 Million but is under PKR 6 Million </button>
+<div class="content">
+  <p>If the annual salary income exceeds PKR. 3.6 million but does not exceed PKR. 6 million then the rate of income tax is flat PKR. 405,000 + 25% of the amount exceeding PKR. 3.6 million</p>
+</div>
+<button type="button" class="collapsible">Salary income exceeds PKR 6 Million but is under PKR 12 Million</button>
+<div class="content">
+  <p>If the annual salary income exceeds PKR 6 Million but does not exceed PKR. 12 million then the rate of income tax is flat PKR 1.005 million + 32.5% of the amount exceeding PKR. 6 million</p>
+</div>
+<button type="button" class="collapsible">Salary income exceeds PKR 12 million</button>
+<div class="content">
+  <p>If the annual salary income exceeds PKR. 12 million then the rate of income tax is flat PKR 2.955 million + 35% of the amount exceeding PKR. 12 million</p>
+</div>
+
+    <!-- <section id="select">
+        <select>
+            <option>Salary income is under PKR 600,000</option>
+            <option>If the annual salary income does not exceed PKR. 600,000 then the rate of the income tax is 0%</option>
+          </select>
+          <select>
+            <option>Salary income exceeds PKR 600,000 but is under PKR 1.2 Million</option>
+            <option>If the annual salary income exceeds PKR. 600,000 but does not exceed PKR. 1.2 million then the rate of income tax is 2.5% of the amount exceeding PKR. 600,000.</option>
+          </select>
+          <select>
+            <option>Salary income exceeds PKR 1.2 Million but is under PKR 2.4 Million</option>
+            <option>If the taxable annual income exceeds PKR. 1.2 million but does not exceed PKR. 2.4 million then the rate of income tax is PKR. 15,000 + 12.5% of the amount exceeding PKR. 1.2 million.</option>
+          </select>
+          <select>
+            <option>Salary income exceeds PKR 2.4 Million but is under PKR 3.6 Million</option>
+            <option>If the annual salary income exceeds PKR. 2.4 million but does not exceed PKR. 3.6 million then the rate of income tax is flat PKR 165,000 + 20% of the amount exceeding PKR. 2.4 million</option>
+          </select>
+          <select>
+            <option>Salary income exceeds PKR 3.6 Million but is under PKR 6 Million</option>
+            <option>If the annual salary income exceeds PKR. 3.6 million but does not exceed PKR. 6 million then the rate of income tax is flat PKR. 405,000 + 25% of the amount exceeding PKR. 3.6 million</option>
+          </select>
+          <select>
+            <option>Salary income exceeds PKR 6 Million but is under PKR 12 Million</option>
+            <option>If the annual salary income exceeds PKR 6 Million but does not exceed PKR. 12 million then the rate of income tax is flat PKR 1.005 million + 32.5% of the amount exceeding PKR. 6 million</option>
+          </select>
+          <select>
+            <option>Salary income exceeds PKR 12 million</option>
+            <option>If the annual salary income exceeds PKR. 12 million then the rate of income tax is flat PKR 2.955 million + 35% of the amount exceeding PKR. 12 million</option>
+          </select>
+    </section> -->
+
+    <p class="ptitle" >Contact Us</p>
+    <h3 style="text-align:centerleft;">Submit your tax queries</h3>
+    <P style="text-align:centerleft;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </P>
+
+    
+        
+        <div id="ContactUs">
+          <section style="background-color:grey";>
+            <div class="row-22">
+                <div>
+                  <p style="text-align: center; color: white; background-color: black; padding: 10px;">Personal information</p>
+                </div>
+                <form>
+                <div>
+                    <button class="input button-1">Name</button>
+                     <input class="input" type="text" placeholder="Full Name" />
+                </div>
+                <div>
+                    <button class="input button-1">Email</button>
+                  <input class="input" type="text" placeholder="Email" />
+                </div>
+                <div>
+                  <button class="input button-1">What's on your mind?</button>
+                  <input class="input" type="text" placeholder="Message" />
+                </div>
+            </form>
+          </section>
+        </div>
+
+    
+    <h3 id="AboutUs">About Us</h3>
+    <p style="text-align:center">We develop high-quality websites, apps and desktop apps. We also provide Cloud and DevOps support for your software/company. Our aim is to bring your software concept from development to cloud. We are fully agile so we present your software and take feedback from you regularly. We provide best after service support to our clients.<p>
+
+        <section class="end">
+            <ul>
+                <li><img src="FB.png" alt="Facebook"></li>
+                <li><img src="twt.png" alt="Twitter"></li>
+                <li><img src="WA.png" alt="WhatsApp"></li>
+            </ul>
+            <p>Designed and Developed by Go Dev ©</p>
+
+        </section>
+    <script src="script.js"></script>
+  </body>
+</html>

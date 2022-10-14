@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap%27');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;   /* Ending header margin */
+}
+
+select, input, button {
+  border: none;                   /* removing border for all boxes */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;                     /* Utilzing flex acroos all nav*/
+  padding: 10px;
+  background-color: black;
+}
+.ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 40px;
+  gap: 50px;                                              /* Allows for the ul to enter in a state of flex*/
+  color: white;
+  background-color: black;
+}
+
+li {
+  display: inline;
+  color: white;                                     /* Getting rid of the dots in unordered list and aligning them in a line */
+}
+
+.select {
+  background-color: black;
+  color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;                                        /* custominzing select tag */
+}
+nav img {
+  width: 55px;
+  height: 66px;
+}
+
+.section-main {
+  height: 88.5vh;
+  background-size: cover;                      
+  background-repeat: no-repeat;                            /* Image is too big, issues in reponsiveness, it repeats so repetition is removed*/
+  background-position: center;
+  background-image: url('p.jpg');
+}
+
+.header {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;                                  /* Customization to bring first two texts in center */
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: 'Kadwa', serif;
+}
+
+.header p {
+  font-family: 'Kadwa', serif;
+}
+
+.second-section {
+  height: 70%;
+}
+
+.row-1 {
+  display: flex;                                                    /* turning second segment into a row */
+  justify-content: space-around;
+}
+
+.input {
+  width: 150px;
+  height: 30px;                                                                          /* Adjusting input textfield and bringing in center*/
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.input1{
+    width: 150px;
+    height: 30px;
+    text-align: center;                                                           /* Adjustment for later on issues */
+    font-family: 'Open Sans', sans-serif;
+    background-color:black; 
+    color:white
+  }
+
+.button {
+  font-weight: bold;
+  background-color: #6FCE95;
+}
+
+.button-1 {
+  font-family: 'Open Sans', serif;
+  background-color: #FFFFFF;
+  font-weight: bold;
+}
+
+.row-2 div {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.law {
+  height: 50vh;
+  display: flex;
+}
+
+.row {
+  font-family: 'Open Sans', serif;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.row p {
+  width: 50%;
+}
+
+.ptitle{
+    color:#6FCE95;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Kadwa', serif;
+
+}
+
+.SSJ{
+    width: 10 em;
+    color:black;
+    align-items: center;
+    text-align: center;
+}
+
+.h1head1{
+    color:black;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Kadwa', serif;
+
+}
+
+.row-22 div {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: right;
+  }
+  
+.end{
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color:white;
+  }
+
+  #ContactUS{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Kadwa', serif;
+  }
+
+  #AboutUs{color:#6FCE95;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Kadwa', serif;
+  }
+
+  a{
+    color:white;
+    text-decoration: none;
+
+  }
+
+  .ul-nav {
+    display: none;
+  }
+
+@media screen and (max-width: 600px) {
+  .ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
+}
+
+.collapsible {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.content {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
